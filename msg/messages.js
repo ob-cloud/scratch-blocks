@@ -279,6 +279,9 @@ Blockly.Msg.SOUND_SETVOLUMETO = 'set volume to %1%';
 Blockly.Msg.SOUND_VOLUME = 'volume';
 Blockly.Msg.SOUND_RECORD = 'record...';
 
+// uav blocks TODO
+Blockly.Msg.UAV_CALIBRATION = 'calibrate compass %1'
+
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';
 Blockly.Msg.CATEGORY_LOOKS = 'Looks';
