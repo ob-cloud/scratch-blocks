@@ -286,6 +286,21 @@ Blockly.Msg.UAV_OPERATORS_SUBTRACT = '-';
 Blockly.Msg.UAV_OPERATORS_MULTIPLY = '*';
 Blockly.Msg.UAV_OPERATORS_DIVIDE = '/';
 
+Blockly.Msg.UAV_OPERATORS_ARITHMETIC = '%1 %2 %3'
+Blockly.Msg.UAV_OPERATORS_ARITHMETIC_ADD = '+';
+Blockly.Msg.UAV_OPERATORS_ARITHMETIC_SUBTRACT = '-';
+Blockly.Msg.UAV_OPERATORS_ARITHMETIC_MULTIPLY = '*';
+Blockly.Msg.UAV_OPERATORS_ARITHMETIC_DIVIDE = '/';
+
+Blockly.Msg.UAV_OPERATORS_COMPARE = '%1 %2 %3'
+Blockly.Msg.UAV_OPERATORS_COMPARE_EQUAL = '=';
+Blockly.Msg.UAV_OPERATORS_COMPARE_GT = '>';
+Blockly.Msg.UAV_OPERATORS_COMPARE_LT = '<';
+
+Blockly.Msg.UAV_OPERATORS_LOGIC = '%1 %2 %3'
+Blockly.Msg.UAV_OPERATORS_LOGIC_AND = '与';
+Blockly.Msg.UAV_OPERATORS_LOGIC_OR = '或';
+
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';
 Blockly.Msg.CATEGORY_LOOKS = 'Looks';

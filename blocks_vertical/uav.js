@@ -37,7 +37,7 @@ Blockly.Blocks['uav_calibration'] = {
     this.jsonInit({
       "message0": "测试积木",
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_sounds", "shape_statement"]
+      "extensions": ["colours_uav", "shape_statement"]
     });
   }
 };
@@ -51,7 +51,7 @@ Blockly.Blocks['uav_text'] = {
     this.jsonInit({
       "message0": "测试测试",
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_sounds", "shape_statement"]
+      "extensions": ["colours_uav", "shape_statement"]
     });
   }
 };
@@ -85,7 +85,7 @@ Blockly.Blocks['uav_operator'] = {
         }
       ],
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_operators", "output_number"]
+      "extensions": ["colours_uav", "output_number"]
     });
   }
 };
