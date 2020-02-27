@@ -55,3 +55,37 @@ Blockly.Blocks['uav_text'] = {
     });
   }
 };
+
+Blockly.Blocks['uav_operator'] = {
+  /**
+   * Block for multiplying two numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_OPERATORS,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM1"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "UAVOPERATORS",
+          "options": [
+            [Blockly.Msg.UAV_OPERATORS_ADD, 'ADD'],
+            [Blockly.Msg.UAV_OPERATORS_SUBTRACT, 'SUBTRACT'],
+            [Blockly.Msg.UAV_OPERATORS_MULTIPLY, 'MULTIPLY'],
+            [Blockly.Msg.UAV_OPERATORS_DIVIDE, 'DIVIDE']
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "NUM2"
+        }
+      ],
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};

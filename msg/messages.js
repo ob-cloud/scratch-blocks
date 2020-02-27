@@ -279,6 +279,13 @@ Blockly.Msg.SOUND_SETVOLUMETO = 'set volume to %1%';
 Blockly.Msg.SOUND_VOLUME = 'volume';
 Blockly.Msg.SOUND_RECORD = 'record...';
 
+// Uav blocks
+Blockly.Msg.UAV_OPERATORS = '%1 %2 %3';
+Blockly.Msg.UAV_OPERATORS_ADD = '+';
+Blockly.Msg.UAV_OPERATORS_SUBTRACT = '-';
+Blockly.Msg.UAV_OPERATORS_MULTIPLY = '*';
+Blockly.Msg.UAV_OPERATORS_DIVIDE = '/';
+
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';
 Blockly.Msg.CATEGORY_LOOKS = 'Looks';
@@ -289,6 +296,7 @@ Blockly.Msg.CATEGORY_SENSING = 'Sensing';
 Blockly.Msg.CATEGORY_OPERATORS = 'Operators';
 Blockly.Msg.CATEGORY_VARIABLES = 'Variables';
 Blockly.Msg.CATEGORY_MYBLOCKS = 'My Blocks';
+Blockly.Msg.CATEGORY_UAV = 'UAV'
 
 // Context menus
 Blockly.Msg.DUPLICATE = 'Duplicate';
