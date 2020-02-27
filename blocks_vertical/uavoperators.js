@@ -123,6 +123,29 @@ Blockly.Blocks['uavoperator_compare'] = {
   }
 };
 
+Blockly.Blocks['uavoperator_random'] = {
+  /**
+   * Block for picking a random number.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_RANDOM,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "FROM"
+        },
+        {
+          "type": "input_value",
+          "name": "TO"
+        }
+      ],
+      "category": Blockly.Categories.uavoperators,
+      "extensions": ["colours_uavoperators", "output_number"]
+    });
+  }
+};
 
 Blockly.Blocks['uavoperator_logic'] = {
   /**
