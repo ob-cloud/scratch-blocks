@@ -35,9 +35,9 @@ Blockly.Blocks['uav_calibration'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": Blockly.Msg.UAV_CALIBRATION,
+      "message0": "测试积木",
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_uav", "shape_statement"]
+      "extensions": ["colours_sounds", "shape_statement"]
     });
   }
 };
@@ -51,7 +51,7 @@ Blockly.Blocks['uav_text'] = {
     this.jsonInit({
       "message0": "测试测试",
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_uav", "shape_statement"]
+      "extensions": ["colours_sounds", "shape_statement"]
     });
   }
 };

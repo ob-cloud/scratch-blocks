@@ -4240,7 +4240,6 @@ Blockly.ScratchMsgs.locales["en"] =
     "SOUND_CHANGEVOLUMEBY": "change volume by %1",
     "SOUND_SETVOLUMETO": "set volume to %1%",
     "SOUND_VOLUME": "volume",
-    "UAV_CALIBRATION": "calibration",
     "SOUND_RECORD": "record...",
     "CATEGORY_MOTION": "Motion",
     "CATEGORY_LOOKS": "Looks",
@@ -17112,9 +17111,6 @@ Blockly.ScratchMsgs.locales["zh-cn"] =
     "SOUND_SETVOLUMETO": "将音量设为 %1%",
     "SOUND_VOLUME": "音量",
     "SOUND_RECORD": "录制…",
-    // TODO 无人机
-    "UAV_CALIBRATION": "方向校准",
-
     "CATEGORY_MOTION": "运动",
     "CATEGORY_LOOKS": "外观",
     "CATEGORY_SOUND": "声音",
@@ -17124,7 +17120,6 @@ Blockly.ScratchMsgs.locales["zh-cn"] =
     "CATEGORY_OPERATORS": "运算",
     "CATEGORY_VARIABLES": "变量",
     "CATEGORY_MYBLOCKS": "自制积木",
-    "CATEGORY_UAV": "无人机",
     "DUPLICATE": "复制",
     "DELETE": "删除",
     "ADD_COMMENT": "添加注释",

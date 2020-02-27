@@ -561,8 +561,4 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
       '</value>' +
     '</block>' +
   '</category>' +
-  '<category name="uav" id="uav" colour="#FF8C1A" secondaryColour="#DB6E00">' +
-    '<block type="uav_calibration" id="uav_calibration"></block>' +
-    '<block type="uav_text" id="uav_text"></block>' +
-  '</category>' +
   '</xml>';
