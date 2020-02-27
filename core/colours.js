@@ -71,9 +71,9 @@ Blockly.Colours = {
     "tertiary": "#555555"
   },
   "uavoperators": {
-    "primary": "#000099",
-    "secondary": "#0000CC",
-    "tertiary": "#0000FF"
+    "primary": "#006699",
+    "secondary": "#0066CC",
+    "tertiary": "#0066FF"
   },
   "data": {
     "primary": "#FF8C1A",
