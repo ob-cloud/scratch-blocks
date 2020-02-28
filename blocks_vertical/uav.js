@@ -238,7 +238,7 @@ Blockly.Blocks['uav_fly_direction'] = {
         }
       ],
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_uav", "output_number"]
+      "extensions": ["colours_uav", "shape_statement"]
     });
   }
 }
@@ -286,7 +286,7 @@ Blockly.Blocks['uav_fly_turn'] = {
         }
       ],
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_uav", "output_number"]
+      "extensions": ["colours_uav", "shape_statement"]
     });
   }
 }
