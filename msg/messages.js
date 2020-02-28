@@ -280,6 +280,28 @@ Blockly.Msg.SOUND_VOLUME = 'volume';
 Blockly.Msg.SOUND_RECORD = 'record...';
 
 // Uav blocks
+Blockly.Msg.UAV_ROBOT_CAL = '校准 %1';
+Blockly.Msg.UAV_ROBOT_CALGYRO = '陀螺仪';
+Blockly.Msg.UAV_ROBOT_CALMAG = '磁力计';
+Blockly.Msg.UAV_ROBOT_LOCK = '锁机';
+Blockly.Msg.UAV_ROBOT_UNLOCK = '解锁';
+Blockly.Msg.UAV_ROBOT_TAKEOFF = '起飞';
+Blockly.Msg.UAV_ROBOT_LANDING = '降落';
+Blockly.Msg.UAV_ROBOT_FLYDOWN = '下降';
+Blockly.Msg.UAV_ROBOT_FLYRISE = '上升';
+Blockly.Msg.UAV_ROBOT_FLYDIRECTION = '往%1飞';
+Blockly.Msg.UAV_ROBOT_FLYDIRECTION_FORWARD = '前';
+Blockly.Msg.UAV_ROBOT_FLYDIRECTION_BACK = '后';
+Blockly.Msg.UAV_ROBOT_FLYDIRECTION_LEFT = '左';
+Blockly.Msg.UAV_ROBOT_FLYDIRECTION_RIGHT = '右';
+Blockly.Msg.UAV_ROBOT_FLYTURN = '往%1转头';
+Blockly.Msg.UAV_ROBOT_FLYTURN_LEFT = '左';
+Blockly.Msg.UAV_ROBOT_FLYTURN_RIGHT = '右';
+Blockly.Msg.UAV_ROBOT_SENDMSG = '发送数据';
+Blockly.Msg.UAV_ROBOT_RECIEVEMSG = '接收数据';
+Blockly.Msg.UAV_ROBOT_CONNECTION = '连接成功';
+Blockly.Msg.UAV_ROBOT_SETBAUDRATE = '波特率: %1.baudRates';
+
 Blockly.Msg.UAV_OPERATORS = '%1 %2 %3';
 Blockly.Msg.UAV_OPERATORS_ADD = '+';
 Blockly.Msg.UAV_OPERATORS_SUBTRACT = '-';

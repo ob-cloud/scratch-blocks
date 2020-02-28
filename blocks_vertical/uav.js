@@ -89,3 +89,259 @@ Blockly.Blocks['uav_operator'] = {
     });
   }
 };
+
+// 校准陀螺仪
+Blockly.Blocks['uav_cal'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_CAL,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "UAVCAL",
+          "options": [
+            [Blockly.Msg.UAV_ROBOT_CALGYRO, 'GYRO'],
+            [Blockly.Msg.UAV_ROBOT_CALMAG, 'MAG']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "output_number"]
+    });
+  }
+}
+
+// 锁机
+Blockly.Blocks['lock'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_LOCK,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 解锁
+Blockly.Blocks['unlock'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_UNLOCK,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 起飞
+Blockly.Blocks['takeoff'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_TAKEOFF,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 降落
+Blockly.Blocks['landing'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_LANDING,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 上升
+Blockly.Blocks['fly_rise'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_FLYRISE,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 下降
+Blockly.Blocks['fly_down'] = {
+   /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_FLYDOWN,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 飞向
+Blockly.Blocks['fly_direction'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_FLYDIRECTION,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "UAVFLYDIRECTION",
+          "options": [
+            [Blockly.Msg.UAV_ROBOT_FLYDIRECTION_FORWARD, 'FORWARD'],
+            [Blockly.Msg.UAV_ROBOT_FLYDIRECTION_BACK, 'BACK'],
+            [Blockly.Msg.UAV_ROBOT_FLYDIRECTION_LEFT, 'LEFT'],
+            [Blockly.Msg.UAV_ROBOT_FLYDIRECTION_RIGHT, 'RIGHT']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "output_number"]
+    });
+  }
+}
+
+// 往前飞
+Blockly.Blocks['fly_forward'] = {
+
+}
+
+// 往后飞
+Blockly.Blocks['fly_back'] = {
+
+}
+
+// 往左飞
+Blockly.Blocks['fly_left'] = {
+
+}
+
+// 往右飞
+Blockly.Blocks['fly_right'] = {
+
+}
+
+Blockly.Blocks['fly_turn'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_FLYTURN,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "UAVFLYTURN",
+          "options": [
+            [Blockly.Msg.UAV_ROBOT_FLYTURN_LEFT, 'LEFT'],
+            [Blockly.Msg.UAV_ROBOT_FLYTURN_RIGHT, 'RIGHT']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "output_number"]
+    });
+  }
+}
+// 往左转头
+Blockly.Blocks['fly_turnleft'] = {
+
+}
+
+// 往右转头
+Blockly.Blocks['fly_turnright'] = {
+
+}
+
+// 发送数据
+Blockly.Blocks['send_message'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_SENDMSG,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 连接成功
+Blockly.Blocks['check_connection'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_CONNECTION,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 最新接受数据
+Blockly.Blocks['receive_message'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_RECIEVEMSG,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 波特率
+Blockly.Blocks['set_baud_rate'] = {
+   /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_SETBAUDRATE,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "UAVRATE",
+          "options": [
+            ['2400', '2400'],
+            ['9600', '9600'],
+            ['19200', '19200'],
+            ['38400', '38400'],
+            ['57600', '57600'],
+            ['115200', '115200']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
