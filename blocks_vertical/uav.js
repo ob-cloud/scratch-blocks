@@ -178,6 +178,13 @@ Blockly.Blocks['uav_fly_rise'] = {
   init: function() {
     this.jsonInit({
       "message0": Blockly.Msg.UAV_ROBOT_FLYRISE,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM",
+          "check": "Number"
+        }
+      ],
       "category": Blockly.Categories.uav,
       "extensions": ["colours_uav", "shape_statement"]
     });
@@ -192,6 +199,13 @@ Blockly.Blocks['uav_fly_down'] = {
   init: function() {
     this.jsonInit({
       "message0": Blockly.Msg.UAV_ROBOT_FLYDOWN,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM",
+          "check": "Number"
+        }
+      ],
       "category": Blockly.Categories.uav,
       "extensions": ["colours_uav", "shape_statement"]
     });
@@ -216,6 +230,11 @@ Blockly.Blocks['uav_fly_direction'] = {
             [Blockly.Msg.UAV_ROBOT_FLYDIRECTION_LEFT, 'LEFT'],
             [Blockly.Msg.UAV_ROBOT_FLYDIRECTION_RIGHT, 'RIGHT']
           ]
+        },
+        {
+          "type": "input_value",
+          "name": "NUM",
+          "check": "Number"
         }
       ],
       "category": Blockly.Categories.uav,
@@ -259,6 +278,11 @@ Blockly.Blocks['uav_fly_turn'] = {
             [Blockly.Msg.UAV_ROBOT_FLYTURN_LEFT, 'LEFT'],
             [Blockly.Msg.UAV_ROBOT_FLYTURN_RIGHT, 'RIGHT']
           ]
+        },
+        {
+          "type": "input_value",
+          "name": "NUM",
+          "check": "Number"
         }
       ],
       "category": Blockly.Categories.uav,
@@ -284,6 +308,12 @@ Blockly.Blocks['uav_send_message'] = {
   init: function() {
     this.jsonInit({
       "message0": Blockly.Msg.UAV_ROBOT_SENDMSG,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MSG",
+        }
+      ],
       "category": Blockly.Categories.uav,
       "extensions": ["colours_uav", "shape_statement"]
     });
