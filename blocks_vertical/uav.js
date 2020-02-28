@@ -115,7 +115,7 @@ Blockly.Blocks['uav_cal'] = {
 }
 
 // 锁机
-Blockly.Blocks['lock'] = {
+Blockly.Blocks['uav_lock'] = {
   /**
    * @this Blockly.Block
    */
@@ -129,7 +129,7 @@ Blockly.Blocks['lock'] = {
 }
 
 // 解锁
-Blockly.Blocks['unlock'] = {
+Blockly.Blocks['uav_unlock'] = {
   /**
    * @this Blockly.Block
    */
@@ -143,7 +143,7 @@ Blockly.Blocks['unlock'] = {
 }
 
 // 起飞
-Blockly.Blocks['takeoff'] = {
+Blockly.Blocks['uav_takeoff'] = {
   /**
    * @this Blockly.Block
    */
@@ -157,7 +157,7 @@ Blockly.Blocks['takeoff'] = {
 }
 
 // 降落
-Blockly.Blocks['landing'] = {
+Blockly.Blocks['uav_landing'] = {
   /**
    * @this Blockly.Block
    */
@@ -171,7 +171,7 @@ Blockly.Blocks['landing'] = {
 }
 
 // 上升
-Blockly.Blocks['fly_rise'] = {
+Blockly.Blocks['uav_fly_rise'] = {
   /**
    * @this Blockly.Block
    */
@@ -185,7 +185,7 @@ Blockly.Blocks['fly_rise'] = {
 }
 
 // 下降
-Blockly.Blocks['fly_down'] = {
+Blockly.Blocks['uav_fly_down'] = {
    /**
    * @this Blockly.Block
    */
@@ -199,7 +199,7 @@ Blockly.Blocks['fly_down'] = {
 }
 
 // 飞向
-Blockly.Blocks['fly_direction'] = {
+Blockly.Blocks['uav_fly_direction'] = {
   /**
    * @this Blockly.Block
    */
@@ -244,7 +244,7 @@ Blockly.Blocks['fly_right'] = {
 
 }
 
-Blockly.Blocks['fly_turn'] = {
+Blockly.Blocks['uav_fly_turn'] = {
   /**
    * @this Blockly.Block
    */
@@ -277,7 +277,7 @@ Blockly.Blocks['fly_turnright'] = {
 }
 
 // 发送数据
-Blockly.Blocks['send_message'] = {
+Blockly.Blocks['uav_send_message'] = {
   /**
    * @this Blockly.Block
    */
@@ -291,7 +291,7 @@ Blockly.Blocks['send_message'] = {
 }
 
 // 连接成功
-Blockly.Blocks['check_connection'] = {
+Blockly.Blocks['uav_connection'] = {
   /**
    * @this Blockly.Block
    */
@@ -305,7 +305,7 @@ Blockly.Blocks['check_connection'] = {
 }
 
 // 最新接受数据
-Blockly.Blocks['receive_message'] = {
+Blockly.Blocks['uav_receive_message'] = {
   /**
    * @this Blockly.Block
    */
@@ -319,7 +319,7 @@ Blockly.Blocks['receive_message'] = {
 }
 
 // 波特率
-Blockly.Blocks['set_baud_rate'] = {
+Blockly.Blocks['uav_set_baud_rate'] = {
    /**
    * @this Blockly.Block
    */
