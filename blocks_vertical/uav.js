@@ -290,6 +290,32 @@ Blockly.Blocks['uav_fly_turn'] = {
     });
   }
 }
+
+Blockly.Blocks['uav_fly_flip'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_FLYFLIP,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "UAVFLYFLIP",
+          "options": [
+            [Blockly.Msg.UAV_ROBOT_FLYFLIP_LEFT, 'LEFT'],
+            [Blockly.Msg.UAV_ROBOT_FLYFLIP_RIGHT, 'RIGHT'],
+            [Blockly.Msg.UAV_ROBOT_FLYFLIP_FORWARD, 'FORWARD'],
+            [Blockly.Msg.UAV_ROBOT_FLYFLIP_BACK, 'BACK']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
 // 往左转头
 Blockly.Blocks['fly_turnleft'] = {
 
