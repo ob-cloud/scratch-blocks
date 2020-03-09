@@ -109,7 +109,7 @@ Blockly.Blocks['uav_cal'] = {
         }
       ],
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_uav", "output_number"]
+      "extensions": ["colours_uav", "shape_statement"]
     });
   }
 }
