@@ -328,6 +328,9 @@ Blockly.Msg.UAV_OPERATORS_LOGIC = '%1 %2 %3'
 Blockly.Msg.UAV_OPERATORS_LOGIC_AND = '与';
 Blockly.Msg.UAV_OPERATORS_LOGIC_OR = '或';
 
+Blockly.Msg.GESTURE = '手势';
+Blockly.Msg.GESTURE_START = '启动识别';
+
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';
 Blockly.Msg.CATEGORY_LOOKS = 'Looks';
