@@ -142,6 +142,48 @@ Blockly.Blocks['uav_unlock'] = {
   }
 }
 
+// 人脸解锁
+Blockly.Blocks['uav_face_unlock'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_FACE_UNLOCK,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 手势识别
+Blockly.Blocks['uav_gesture_detect'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_GESTURE_DETECT,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
+// 态势识别
+Blockly.Blocks['uav_situation_detect'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_SITUATION_DETECT,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
 // 起飞
 Blockly.Blocks['uav_takeoff'] = {
   /**
