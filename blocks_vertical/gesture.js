@@ -38,7 +38,7 @@ Blockly.Blocks['detect_face_unlock'] = {
     this.jsonInit({
       "message0": Blockly.Msg.UAV_ROBOT_FACE_UNLOCK,
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_motion", "shape_statement"]
+      "extensions": ["colours_motion", "output_boolean"]
     });
   }
 }
@@ -52,7 +52,7 @@ Blockly.Blocks['detect_gesture'] = {
     this.jsonInit({
       "message0": Blockly.Msg.UAV_ROBOT_GESTURE_DETECT,
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_motion", "shape_statement"]
+      "extensions": ["colours_motion", "output_number"]
     });
   }
 }
@@ -66,7 +66,7 @@ Blockly.Blocks['detect_situation'] = {
     this.jsonInit({
       "message0": Blockly.Msg.UAV_ROBOT_SITUATION_DETECT,
       "category": Blockly.Categories.uav,
-      "extensions": ["colours_motion", "shape_statement"]
+      "extensions": ["colours_motion", "output_number"]
     });
   }
 }
