@@ -22,6 +22,17 @@ Blockly.Blocks['gesture_start'] = {
   init: function() {
     this.jsonInit({
       "message0": Blockly.Msg.GESTURE_START,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "GESTURESTART",
+          "options": [
+            [Blockly.Msg.GESTURE_START_FACE, 'FACE'],
+            [Blockly.Msg.GESTURE_START_VISUAL, 'VISUAL'],
+            [Blockly.Msg.GESTURE_START_SITUATION, 'SITUATION'],
+          ]
+        }
+      ],
       "category": Blockly.Categories.gesture,
       "extensions": ["colours_motion", "shape_statement"]
     });

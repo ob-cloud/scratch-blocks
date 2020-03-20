@@ -332,7 +332,10 @@ Blockly.Msg.UAV_OPERATORS_LOGIC_AND = '与';
 Blockly.Msg.UAV_OPERATORS_LOGIC_OR = '或';
 
 Blockly.Msg.GESTURE = '手势';
-Blockly.Msg.GESTURE_START = '启动识别';
+Blockly.Msg.GESTURE_START = '启动%1识别';
+Blockly.Msg.GESTURE_START_FACE = '人脸';
+Blockly.Msg.GESTURE_START_VISUAL = '视觉';
+Blockly.Msg.GESTURE_START_SITUATION = '姿势';
 
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';
