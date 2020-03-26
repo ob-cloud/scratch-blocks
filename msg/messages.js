@@ -288,6 +288,9 @@ Blockly.Msg.UAV_ROBOT_UNLOCK = '解锁';
 Blockly.Msg.UAV_ROBOT_FACE_UNLOCK = '人脸解锁';
 Blockly.Msg.UAV_ROBOT_GESTURE_DETECT = '视觉跟踪';
 Blockly.Msg.UAV_ROBOT_SITUATION_DETECT = '姿态识别';
+Blockly.Msg.UAV_ROBOT_FACE_REG = '人臉注冊';
+Blockly.Msg.UAV_ROBOT_CAMERA_OPEN = '开启相机';
+Blockly.Msg.UAV_ROBOT_CAMERA_CLOSE = '关闭相机';
 Blockly.Msg.UAV_ROBOT_TAKEOFF = '起飞';
 Blockly.Msg.UAV_ROBOT_LANDING = '降落';
 Blockly.Msg.UAV_ROBOT_FLYDOWN = '下降%1';
@@ -333,9 +336,12 @@ Blockly.Msg.UAV_OPERATORS_LOGIC_OR = '或';
 
 Blockly.Msg.GESTURE = '手势';
 Blockly.Msg.GESTURE_START = '启动%1识别';
-Blockly.Msg.GESTURE_START_FACE = '人脸';
+Blockly.Msg.GESTURE_START_FACE = '人脸识别';
 Blockly.Msg.GESTURE_START_VISUAL = '视觉';
 Blockly.Msg.GESTURE_START_SITUATION = '姿势';
+Blockly.Msg.GESTURE_START_FACEREG = '人脸注册';
+Blockly.Msg.GESTURE_START_CAMERA_OPEN = '开启相机';
+Blockly.Msg.GESTURE_START_CAMERA_CLOSE = '关闭相机';
 
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';

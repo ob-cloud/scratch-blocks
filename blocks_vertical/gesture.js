@@ -30,6 +30,9 @@ Blockly.Blocks['gesture_start'] = {
             [Blockly.Msg.GESTURE_START_FACE, 'FACE'],
             [Blockly.Msg.GESTURE_START_VISUAL, 'VISUAL'],
             [Blockly.Msg.GESTURE_START_SITUATION, 'SITUATION'],
+            [Blockly.Msg.GESTURE_START_FACEREG, 'FACEREG'],
+            [Blockly.Msg.GESTURE_START_CAMERA_OPEN, 'CAMERAOPEN'],
+            [Blockly.Msg.GESTURE_START_CAMERA_CLOSE, 'CAMERACLOSE'],
           ]
         }
       ],
@@ -78,6 +81,48 @@ Blockly.Blocks['detect_situation'] = {
       "message0": Blockly.Msg.UAV_ROBOT_SITUATION_DETECT,
       "category": Blockly.Categories.uav,
       "extensions": ["colours_motion", "output_number"]
+    });
+  }
+}
+
+// 开启相机
+Blockly.Blocks['camera_open'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_CAMERA_OPEN,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_motion", "output_boolean"]
+    });
+  }
+}
+
+// 关闭相机
+Blockly.Blocks['camera_close'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_CAMERA_CLOSE,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_motion", "output_boolean"]
+    });
+  }
+}
+
+// 人脸注册
+Blockly.Blocks['face_reg'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_FACE_REG,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_motion", "output_boolean"]
     });
   }
 }
