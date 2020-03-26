@@ -335,10 +335,10 @@ Blockly.Msg.UAV_OPERATORS_LOGIC_AND = '与';
 Blockly.Msg.UAV_OPERATORS_LOGIC_OR = '或';
 
 Blockly.Msg.GESTURE = '手势';
-Blockly.Msg.GESTURE_START = '启动%1识别';
+Blockly.Msg.GESTURE_START = '启动%1';
 Blockly.Msg.GESTURE_START_FACE = '人脸识别';
-Blockly.Msg.GESTURE_START_VISUAL = '视觉';
-Blockly.Msg.GESTURE_START_SITUATION = '姿势';
+Blockly.Msg.GESTURE_START_VISUAL = '视觉追踪';
+Blockly.Msg.GESTURE_START_SITUATION = '姿势识别';
 Blockly.Msg.GESTURE_START_FACEREG = '人脸注册';
 Blockly.Msg.GESTURE_START_CAMERA_OPEN = '开启相机';
 Blockly.Msg.GESTURE_START_CAMERA_CLOSE = '关闭相机';
