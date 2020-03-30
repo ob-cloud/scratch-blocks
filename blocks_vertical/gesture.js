@@ -32,7 +32,7 @@ Blockly.Blocks['gesture_start'] = {
             [Blockly.Msg.GESTURE_START_SITUATION, 'SITUATION'],
             [Blockly.Msg.GESTURE_START_FACEREG, 'FACEREG'],
             [Blockly.Msg.GESTURE_START_CAMERA_OPEN, 'CAMERAOPEN'],
-            [Blockly.Msg.GESTURE_START_CAMERA_CLOSE, 'CAMERACLOSE'],
+            // [Blockly.Msg.GESTURE_START_CAMERA_CLOSE, 'CAMERACLOSE'],
           ]
         }
       ],
@@ -126,3 +126,30 @@ Blockly.Blocks['face_reg'] = {
     });
   }
 }
+
+Blockly.Blocks['gesture_stop'] = {
+  /**
+   * Block to say for some time.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.GESTURE_STOP,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "GESTURESTOP",
+          "options": [
+            [Blockly.Msg.GESTURE_START_FACE, 'FACE'],
+            [Blockly.Msg.GESTURE_START_VISUAL, 'VISUAL'],
+            [Blockly.Msg.GESTURE_START_SITUATION, 'SITUATION'],
+            [Blockly.Msg.GESTURE_START_FACEREG, 'FACEREG'],
+            [Blockly.Msg.GESTURE_START_CAMERA_CLOSE, 'CAMERACLOSE'],
+          ]
+        }
+      ],
+      "category": Blockly.Categories.gesture,
+      "extensions": ["colours_motion", "shape_statement"]
+    });
+  }
+};
