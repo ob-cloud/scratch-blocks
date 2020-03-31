@@ -30,7 +30,7 @@ Blockly.Blocks['gesture_start'] = {
             [Blockly.Msg.GESTURE_START_FACE, 'FACE'],
             [Blockly.Msg.GESTURE_START_VISUAL, 'VISUAL'],
             [Blockly.Msg.GESTURE_START_SITUATION, 'SITUATION'],
-            [Blockly.Msg.GESTURE_START_FACEREG, 'FACEREG'],
+            // [Blockly.Msg.GESTURE_START_FACEREG, 'FACEREG'],
             [Blockly.Msg.GESTURE_START_CAMERA_OPEN, 'CAMERAOPEN'],
             // [Blockly.Msg.GESTURE_START_CAMERA_CLOSE, 'CAMERACLOSE'],
           ]
@@ -143,7 +143,7 @@ Blockly.Blocks['gesture_stop'] = {
             [Blockly.Msg.GESTURE_START_FACE, 'FACE'],
             [Blockly.Msg.GESTURE_START_VISUAL, 'VISUAL'],
             [Blockly.Msg.GESTURE_START_SITUATION, 'SITUATION'],
-            [Blockly.Msg.GESTURE_START_FACEREG, 'FACEREG'],
+            // [Blockly.Msg.GESTURE_START_FACEREG, 'FACEREG'],
             [Blockly.Msg.GESTURE_START_CAMERA_CLOSE, 'CAMERACLOSE'],
           ]
         }
