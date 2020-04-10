@@ -358,6 +358,20 @@ Blockly.Blocks['uav_fly_flip'] = {
   }
 }
 
+// 急停
+Blockly.Blocks['uav_estop'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.UAV_ROBOT_ESTOP,
+      "category": Blockly.Categories.uav,
+      "extensions": ["colours_uav", "shape_statement"]
+    });
+  }
+}
+
 // 往左转头
 Blockly.Blocks['fly_turnleft'] = {
 
