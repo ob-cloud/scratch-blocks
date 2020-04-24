@@ -44,7 +44,7 @@ Blockly.Blocks['gesture_start'] = {
 
 
 // 人脸解锁
-Blockly.Blocks['detect_face_unlock'] = {
+Blockly.Blocks['gesture_detect_face_unlock'] = {
   /**
    * @this Blockly.Block
    */
@@ -58,7 +58,7 @@ Blockly.Blocks['detect_face_unlock'] = {
 }
 
 // 手势识别
-Blockly.Blocks['detect_gesture'] = {
+Blockly.Blocks['gesture_detect_gesture'] = {
   /**
    * @this Blockly.Block
    */
@@ -72,7 +72,7 @@ Blockly.Blocks['detect_gesture'] = {
 }
 
 // 态势识别
-Blockly.Blocks['detect_situation'] = {
+Blockly.Blocks['gesture_detect_situation'] = {
   /**
    * @this Blockly.Block
    */
@@ -86,7 +86,7 @@ Blockly.Blocks['detect_situation'] = {
 }
 
 // 开启相机
-Blockly.Blocks['camera_open'] = {
+Blockly.Blocks['gesture_camera_open'] = {
   /**
    * @this Blockly.Block
    */
@@ -100,7 +100,7 @@ Blockly.Blocks['camera_open'] = {
 }
 
 // 关闭相机
-Blockly.Blocks['camera_close'] = {
+Blockly.Blocks['gesture_camera_close'] = {
   /**
    * @this Blockly.Block
    */
@@ -114,7 +114,7 @@ Blockly.Blocks['camera_close'] = {
 }
 
 // 人脸注册
-Blockly.Blocks['face_reg'] = {
+Blockly.Blocks['gesture_face_reg'] = {
   /**
    * @this Blockly.Block
    */
