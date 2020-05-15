@@ -271,6 +271,7 @@ Blockly.Categories = {
   "operators": "operators",
   "uav": "uav",
   "gesture": "gesture",
+  "car": "car",
   "uavoperators": "uavoperators",
   "more": "more"
 };

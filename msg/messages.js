@@ -345,6 +345,21 @@ Blockly.Msg.GESTURE_START_FACEREG = '人脸注册';
 Blockly.Msg.GESTURE_START_CAMERA_OPEN = '开启相机';
 Blockly.Msg.GESTURE_START_CAMERA_CLOSE = '关闭相机';
 
+// OB Car
+Blockly.Msg.CAR = 'OB小车';
+Blockly.Msg.CAR_MOVE_ACTION = '向%1走';
+Blockly.Msg.CAR_MOVE_ACTION_LEFT = '左';
+Blockly.Msg.CAR_MOVE_ACTION_RIGHT = '右';
+Blockly.Msg.CAR_MOVE_ACTION_FORWARD = '前';
+Blockly.Msg.CAR_MOVE_ACTION_BACk = '后';
+Blockly.Msg.CAR_TURN_ACTION = '向%1转';
+Blockly.Msg.CAR_TURN_ACTION_LEFT = '左';
+Blockly.Msg.CAR_TURN_ACTION_RIGHT = '右';
+Blockly.Msg.CAR_STOP = '停止';
+Blockly.Msg.CAR_RESET_ACTION = '清除动作';
+Blockly.Msg.CAR_EXEC_ACTION = '执行动作';
+Blockly.Msg.CAR_COLLECT_ENV = '采集环境';
+
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';
 Blockly.Msg.CATEGORY_LOOKS = 'Looks';
