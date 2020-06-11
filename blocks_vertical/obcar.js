@@ -121,3 +121,17 @@ Blockly.Blocks['car_collect_env'] = {
     });
   }
 }
+
+// 采集环境
+Blockly.Blocks['car_turn_around'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.CAR_TURN_AROUND,
+      "category": Blockly.Categories.car,
+      "extensions": ["colours_looks", "shape_statement"]
+    });
+  }
+}

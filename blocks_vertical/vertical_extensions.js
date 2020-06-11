@@ -78,6 +78,12 @@ Blockly.ScratchBlocks.VerticalExtensions.SHAPE_STATEMENT = function() {
   this.setNextStatement(true, null);
 };
 
+Blockly.ScratchBlocks.VerticalExtensions.SHAPE_STATEMENT_IN = function() {
+  this.setInputsInline(false);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+};
+
 /**
  * Extension to make a block be shaped as a hat block, regardless of its
  * inputs.  That means the block should have a next connection and have inline
@@ -238,6 +244,8 @@ Blockly.ScratchBlocks.VerticalExtensions.registerAll = function() {
   // Register extensions for common block shapes.
   Blockly.Extensions.register('shape_statement',
       Blockly.ScratchBlocks.VerticalExtensions.SHAPE_STATEMENT);
+  Blockly.Extensions.register('shape_statement_in',
+      Blockly.ScratchBlocks.VerticalExtensions.SHAPE_STATEMENT_IN);
   Blockly.Extensions.register('shape_hat',
       Blockly.ScratchBlocks.VerticalExtensions.SHAPE_HAT);
   Blockly.Extensions.register('shape_end',

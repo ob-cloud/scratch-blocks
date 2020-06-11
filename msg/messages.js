@@ -359,6 +359,30 @@ Blockly.Msg.CAR_STOP = '停止';
 Blockly.Msg.CAR_RESET_ACTION = '清除动作';
 Blockly.Msg.CAR_EXEC_ACTION = '执行动作';
 Blockly.Msg.CAR_COLLECT_ENV = '采集环境';
+Blockly.Msg.CAR_TURN_AROUND = '调头';
+
+// 编组
+Blockly.Msg.MARSHALLING = '编组';
+Blockly.Msg.MARSHALLING_GROUP = '编组 | 类型%1 组别 %2 设备 %3';
+Blockly.Msg.MARSHALLING_GROUP_RANGE = '编组 | 类型%1 组别 %2 设备 %3 ~ %4';
+Blockly.Msg.MARSHALLING_REQ_DATA = '请求 | 类型%1 设备 %2 ';
+Blockly.Msg.MARSHALLING_CONTROL_LIGHT_ON = '开%1灯';
+Blockly.Msg.MARSHALLING_CONTROL_LIGHT_OFF = '关%1灯';
+
+// 机械臂
+Blockly.Msg.ARM = '机械臂';
+Blockly.Msg.ARM_RESET = '复位';
+Blockly.Msg.ARM_CLAMP = '夹取';
+Blockly.Msg.ARM_UNCLAMP = '松夹';
+Blockly.Msg.ARM_MOVE_HORIZONTAL = '%1移 %2';
+Blockly.Msg.ARM_MOVE_FORWARD = '前';
+Blockly.Msg.ARM_MOVE_BACK = '后';
+Blockly.Msg.ARM_MOVE_LEFT = '左';
+Blockly.Msg.ARM_MOVE_RIGHT = '右';
+Blockly.Msg.ARM_MOVE_VERTICAL = '%1 %2';
+Blockly.Msg.ARM_MOVE_RISE = '上升';
+Blockly.Msg.ARM_MOVE_DECLINE = '下降';
+
 
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';

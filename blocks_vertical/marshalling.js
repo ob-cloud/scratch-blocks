@@ -1,0 +1,178 @@
+/**
+ * @license
+ * Visual Blocks Editor
+ * marshalling 编组
+ */
+
+'use strict';
+
+goog.provide('Blockly.Blocks.marshalling');
+
+goog.require('Blockly.Blocks');
+goog.require('Blockly.Colours');
+goog.require('Blockly.constants');
+goog.require('Blockly.ScratchBlocks.VerticalExtensions');
+
+
+Blockly.Blocks['marshalling_group'] = {
+  /**
+   * Block to say for some time.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MARSHALLING_GROUP,
+      "message1": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "DEVTYPE",
+          "options": [
+            ['1', '1'],
+            ['2', '2'],
+            ['3', '3']
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "GROUP"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE"
+        }
+      ],
+      "args1": [
+        {
+          "type": "input_statement",
+          "name": "SUBSTACK"
+        }
+      ],
+      "category": Blockly.Categories.marshalling,
+      "extensions": ["colours_sounds", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['marshalling_group_range'] = {
+  /**
+   * Block to say for some time.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MARSHALLING_GROUP_RANGE,
+      "message1": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "DEVTYPE",
+          "options": [
+            ['1', '1'],
+            ['2', '2'],
+            ['3', '3']
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "GROUP"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE1"
+        }
+      ],
+      "args1": [
+        {
+          "type": "input_statement",
+          "name": "SUBSTACK"
+        }
+      ],
+      "category": Blockly.Categories.marshalling,
+      "extensions": ["colours_sounds", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['marshalling_req_data'] = {
+  /**
+   * Block to say for some time.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MARSHALLING_REQ_DATA,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "DEVTYPE",
+          "options": [
+            ['1', '1'],
+            ['2', '2'],
+            ['3', '3']
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE"
+        }
+      ],
+      "category": Blockly.Categories.marshalling,
+      "extensions": ["colours_sounds", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['marshalling_control_light_on'] = {
+  /**
+   * Block to say for some time.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MARSHALLING_CONTROL_LIGHT_ON,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "LIGHTTYPE",
+          "options": [
+            ['红', 'red'],
+            ['绿', 'green'],
+            ['蓝', 'blue']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.marshalling,
+      "extensions": ["colours_sounds", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['marshalling_control_light_off'] = {
+  /**
+   * Block to say for some time.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MARSHALLING_CONTROL_LIGHT_OFF,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "LIGHTTYPE",
+          "options": [
+            ['红', 'red'],
+            ['绿', 'green'],
+            ['蓝', 'blue']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.marshalling,
+      "extensions": ["colours_sounds", "shape_statement"]
+    });
+  }
+};
