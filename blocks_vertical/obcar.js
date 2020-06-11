@@ -41,6 +41,27 @@ Blockly.Blocks['car_move_action'] = {
   }
 };
 
+Blockly.Blocks['car_move_forward'] = {
+  /**
+   * Block to say for some time.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.CAR_MOVE_FORWARD,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NUM",
+          "check": "Number"
+        }
+      ],
+      "category": Blockly.Categories.car,
+      "extensions": ["colours_looks", "shape_statement"]
+    });
+  }
+};
+
 // Car Turn Action
 Blockly.Blocks['car_turn_action'] = {
   /**

@@ -35,11 +35,13 @@ Blockly.Blocks['marshalling_group'] = {
         },
         {
           "type": "input_value",
-          "name": "GROUP"
+          "name": "GROUP",
+          "check": "String"
         },
         {
           "type": "input_value",
-          "name": "DEVICE"
+          "name": "DEVICE",
+          "check": "String"
         }
       ],
       "args1": [
@@ -75,15 +77,18 @@ Blockly.Blocks['marshalling_group_range'] = {
         },
         {
           "type": "input_value",
-          "name": "GROUP"
+          "name": "GROUP",
+          "check": "String"
         },
         {
           "type": "input_value",
-          "name": "DEVICE"
+          "name": "DEVICE",
+          "check": "String"
         },
         {
           "type": "input_value",
-          "name": "DEVICE1"
+          "name": "DEVICE1",
+          "check": "String"
         }
       ],
       "args1": [
@@ -118,7 +123,8 @@ Blockly.Blocks['marshalling_req_data'] = {
         },
         {
           "type": "input_value",
-          "name": "DEVICE"
+          "name": "DEVICE",
+          "check": "String"
         }
       ],
       "category": Blockly.Categories.marshalling,

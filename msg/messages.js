@@ -352,6 +352,7 @@ Blockly.Msg.CAR_MOVE_ACTION_LEFT = '左';
 Blockly.Msg.CAR_MOVE_ACTION_RIGHT = '右';
 Blockly.Msg.CAR_MOVE_ACTION_FORWARD = '前';
 Blockly.Msg.CAR_MOVE_ACTION_BACk = '后';
+Blockly.Msg.CAR_MOVE_FORWARD = '前进%1';
 Blockly.Msg.CAR_TURN_ACTION = '向%1转';
 Blockly.Msg.CAR_TURN_ACTION_LEFT = '左';
 Blockly.Msg.CAR_TURN_ACTION_RIGHT = '右';
