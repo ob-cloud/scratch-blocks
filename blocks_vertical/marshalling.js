@@ -103,6 +103,47 @@ Blockly.Blocks['marshalling_group_range'] = {
   }
 };
 
+// 只包含指令、不包含行为
+Blockly.Blocks['marshalling_group_range_fn'] = {
+  /**
+   * Block to say for some time.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MARSHALLING_GROUP_RANGE,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "DEVTYPE",
+          "options": [
+            ['1', '1'],
+            ['2', '2'],
+            ['3', '3']
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "GROUP",
+          "check": "String"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE",
+          "check": "String"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE1",
+          "check": "String"
+        }
+      ],
+      "category": Blockly.Categories.marshalling,
+      "extensions": ["colours_sounds", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['marshalling_req_data'] = {
   /**
    * Block to say for some time.
