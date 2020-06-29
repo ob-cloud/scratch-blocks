@@ -23,17 +23,16 @@ Blockly.Blocks['scene_control_light'] = {
       "message0": Blockly.Msg.SCENE_CONTROL_LIGHT,
       "args0": [
         {
-          "type": "field_dropdown",
-          "name": "LIGHT",
-          "options": [
-            [Blockly.Msg.SCENE_LIGHT_RED, 'RED'],
-            [Blockly.Msg.SCENE_LIGHT_GREEN, 'GREEN'],
-            [Blockly.Msg.SCENE_LIGHT_BLUE, 'BLUE'],
-          ]
+          "type": "input_value",
+          "name": "RED"
         },
         {
           "type": "input_value",
-          "name": "BRIGHTNESS"
+          "name": "BLUE"
+        },
+        {
+          "type": "input_value",
+          "name": "GREEN"
         }
       ],
       "category": Blockly.Categories.scene,
@@ -54,6 +53,10 @@ Blockly.Blocks['scene_control_volume'] = {
         {
           "type": "input_value",
           "name": "VOLUME"
+        },
+        {
+          "type": "input_value",
+          "name": "TIME"
         }
       ],
       "category": Blockly.Categories.scene,
