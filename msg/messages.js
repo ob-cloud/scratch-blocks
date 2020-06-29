@@ -384,6 +384,13 @@ Blockly.Msg.ARM_MOVE_VERTICAL = '%1 %2';
 Blockly.Msg.ARM_MOVE_RISE = '上升';
 Blockly.Msg.ARM_MOVE_DECLINE = '下降';
 
+// 场景控制
+Blockly.Msg.SCENE = '场景';
+Blockly.Msg.SCENE_CONTROL_LIGHT = '灯光控制：%1 亮度：%2';
+Blockly.Msg.SCENE_LIGHT_RED = '红';
+Blockly.Msg.SCENE_LIGHT_GREEN = '绿';
+Blockly.Msg.SCENE_LIGHT_BLUE = '蓝';
+Blockly.Msg.SCENE_CONTROL_VOLUME = '音效控制：%1';
 
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';
