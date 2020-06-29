@@ -386,7 +386,7 @@ Blockly.Msg.ARM_MOVE_DECLINE = '下降';
 
 // 场景控制
 Blockly.Msg.SCENE = '场景';
-Blockly.Msg.SCENE_CONTROL_LIGHT = '灯光控制：红%1 蓝%2 绿%3';
+Blockly.Msg.SCENE_CONTROL_LIGHT = '灯光控制：亮度（ 红%1 蓝%2 绿%3 ）';
 Blockly.Msg.SCENE_LIGHT_RED = '红';
 Blockly.Msg.SCENE_LIGHT_GREEN = '绿';
 Blockly.Msg.SCENE_LIGHT_BLUE = '蓝';
