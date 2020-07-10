@@ -111,7 +111,7 @@ Blockly.Blocks['marshalling_group_range_fn'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": Blockly.Msg.MARSHALLING_GROUP_RANGE,
+      "message0": Blockly.Msg.MARSHALLING_GROUP_RANGE_FN,
       "args0": [
         {
           "type": "field_dropdown",
@@ -135,6 +135,11 @@ Blockly.Blocks['marshalling_group_range_fn'] = {
         {
           "type": "input_value",
           "name": "DEVICE1",
+          "check": "String"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE2",
           "check": "String"
         }
       ],
