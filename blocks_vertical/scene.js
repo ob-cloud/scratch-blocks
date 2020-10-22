@@ -33,6 +33,14 @@ Blockly.Blocks['scene_control_light'] = {
         {
           "type": "input_value",
           "name": "GREEN"
+        },
+        {
+          "type": "input_value",
+          "name": "ONTIME"
+        },
+        {
+          "type": "input_value",
+          "name": "OFFTIME"
         }
       ],
       "category": Blockly.Categories.scene,

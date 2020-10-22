@@ -28,9 +28,9 @@ Blockly.Blocks['marshalling_group'] = {
           "type": "field_dropdown",
           "name": "DEVTYPE",
           "options": [
-            ['1', '1'],
-            ['2', '2'],
-            ['3', '3']
+            ['飞机', '1' ],
+            ['小车', '2'],
+            ['机械臂', '3']
           ]
         },
         {
@@ -70,9 +70,9 @@ Blockly.Blocks['marshalling_group_range'] = {
           "type": "field_dropdown",
           "name": "DEVTYPE",
           "options": [
-            ['1', '1'],
-            ['2', '2'],
-            ['3', '3']
+            ['飞机', '1' ],
+            ['小车', '2'],
+            ['机械臂', '3']
           ]
         },
         {
@@ -117,9 +117,9 @@ Blockly.Blocks['marshalling_group_range_fn'] = {
           "type": "field_dropdown",
           "name": "DEVTYPE",
           "options": [
-            ['1', '1'],
-            ['2', '2'],
-            ['3', '3']
+            ['飞机', '1' ],
+            ['小车', '2'],
+            ['机械臂', '3']
           ]
         },
         {
@@ -140,6 +140,21 @@ Blockly.Blocks['marshalling_group_range_fn'] = {
         {
           "type": "input_value",
           "name": "DEVICE2",
+          "check": "String"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE3",
+          "check": "String"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE4",
+          "check": "String"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE5",
           "check": "String"
         }
       ],
@@ -162,9 +177,9 @@ Blockly.Blocks['marshalling_req_data'] = {
           "type": "field_dropdown",
           "name": "DEVTYPE",
           "options": [
-            ['1', '1'],
-            ['2', '2'],
-            ['3', '3']
+            ['飞机', '1' ],
+            ['小车', '2'],
+            ['机械臂', '3']
           ]
         },
         {

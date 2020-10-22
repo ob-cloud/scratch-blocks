@@ -139,6 +139,7 @@ goog.addDependency("../../../" + dir + "/core/zoom_controls.js", ['Blockly.ZoomC
 goog.addDependency("../../alltests.js", [], []);
 goog.addDependency("../../browser_capabilities.js", [], []);
 goog.addDependency("../../doc/js/article.js", [], []);
+goog.addDependency("../../proto/pot.js", ['proto.mola.o.Hello', 'proto.mola.simple.Simple'], ['jspb.BinaryReader', 'jspb.BinaryWriter', 'jspb.Message']);
 goog.addDependency("../../protractor.conf.js", [], []);
 goog.addDependency("../../protractor_spec.js", [], []);
 goog.addDependency("../../third_party/closure/goog/base.js", [], []);
@@ -155,6 +156,7 @@ goog.addDependency("../../third_party/closure/goog/mochikit/async/deferred_test.
 goog.addDependency("../../third_party/closure/goog/mochikit/async/deferredlist.js", ['goog.async.DeferredList'], ['goog.async.Deferred']);
 goog.addDependency("../../third_party/closure/goog/mochikit/async/deferredlist_test.js", [], ['goog.array', 'goog.async.Deferred', 'goog.async.DeferredList', 'goog.testing.jsunit']);
 goog.addDependency("../../third_party/closure/goog/svgpan/svgpan.js", ['svgpan.SvgPan'], ['goog.Disposable', 'goog.events', 'goog.events.EventType', 'goog.events.MouseWheelHandler']);
+goog.addDependency("../bin/build/proto.js", [], []);
 goog.addDependency("../bin/generate_closure_unit_tests/generate_closure_unit_tests.js", [], []);
 goog.addDependency("a11y/aria/announcer.js", ['goog.a11y.aria.Announcer'], ['goog.Disposable', 'goog.Timer', 'goog.a11y.aria', 'goog.a11y.aria.LivePriority', 'goog.a11y.aria.State', 'goog.dom', 'goog.dom.TagName', 'goog.object']);
 goog.addDependency("a11y/aria/announcer_test.js", ['goog.a11y.aria.AnnouncerTest'], ['goog.a11y.aria', 'goog.a11y.aria.Announcer', 'goog.a11y.aria.LivePriority', 'goog.a11y.aria.State', 'goog.array', 'goog.dom', 'goog.dom.TagName', 'goog.dom.iframe', 'goog.testing.MockClock', 'goog.testing.jsunit']);

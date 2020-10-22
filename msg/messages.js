@@ -366,7 +366,7 @@ Blockly.Msg.CAR_TURN_AROUND = '调头';
 Blockly.Msg.MARSHALLING = '编组';
 Blockly.Msg.MARSHALLING_GROUP = '编组 | 类型%1 组别 %2 设备 %3';
 Blockly.Msg.MARSHALLING_GROUP_RANGE = '编组 | 类型%1 组别 %2 设备 %3 ~ %4';
-Blockly.Msg.MARSHALLING_GROUP_RANGE_FN = '编组 | 类型%1 组别 %2 设备 %3 %4 %5';
+Blockly.Msg.MARSHALLING_GROUP_RANGE_FN = '编组 | 类型%1 组别 %2 设备 %3 %4 %5 %6 %7 %8';
 Blockly.Msg.MARSHALLING_REQ_DATA = '请求 | 类型%1 设备 %2 ';
 Blockly.Msg.MARSHALLING_CONTROL_LIGHT_ON = '开%1灯';
 Blockly.Msg.MARSHALLING_CONTROL_LIGHT_OFF = '关%1灯';
@@ -387,7 +387,7 @@ Blockly.Msg.ARM_MOVE_DECLINE = '下降';
 
 // 场景控制
 Blockly.Msg.SCENE = '场景';
-Blockly.Msg.SCENE_CONTROL_LIGHT = '灯光控制：亮度（ 红%1 蓝%2 绿%3 ）';
+Blockly.Msg.SCENE_CONTROL_LIGHT = '灯光控制：亮度（ 红%1 蓝%2 绿%3 ）时间（ 亮 %4 ms 灭 %5 ms ）';
 Blockly.Msg.SCENE_LIGHT_RED = '红';
 Blockly.Msg.SCENE_LIGHT_GREEN = '绿';
 Blockly.Msg.SCENE_LIGHT_BLUE = '蓝';
