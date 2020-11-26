@@ -103,6 +103,71 @@ Blockly.Blocks['marshalling_group_range'] = {
   }
 };
 
+// // 只包含指令、不包含行为
+// Blockly.Blocks['marshalling_group_range_fn'] = {
+//   /**
+//    * Block to say for some time.
+//    * @this Blockly.Block
+//    */
+//   init: function() {
+//     this.jsonInit({
+//       "message0": Blockly.Msg.MARSHALLING_GROUP_RANGE_FN,
+//       "args0": [
+//         {
+//           "type": "field_dropdown",
+//           "name": "DEVTYPE",
+//           "options": [
+//             ['飞机', '1' ],
+//             ['小车', '2'],
+//             ['机械臂', '3']
+//           ]
+//         },
+//         {
+//           "type": "input_value",
+//           "name": "GROUP",
+//           "check": "String"
+//         },
+//         {
+//           "type": "input_value",
+//           "name": "DEVICE",
+//           "check": "String"
+//         },
+//         {
+//           "type": "input_value",
+//           "name": "DEVICE1",
+//           "check": "String"
+//         },
+//         {
+//           "type": "input_value",
+//           "name": "DEVICE2",
+//           "check": "String"
+//         },
+//         {
+//           "type": "input_value",
+//           "name": "DEVICE3",
+//           "check": "String"
+//         },
+//         {
+//           "type": "input_value",
+//           "name": "DEVICE4",
+//           "check": "String"
+//         },
+//         {
+//           "type": "input_value",
+//           "name": "DEVICE5",
+//           "check": "String"
+//         },
+//         {
+//           "type": "input_value",
+//           "name": "DEVICE6",
+//           "check": "String"
+//         }
+//       ],
+//       "category": Blockly.Categories.marshalling,
+//       "extensions": ["colours_sounds", "shape_statement"]
+//     });
+//   }
+// };
 // 只包含指令、不包含行为
 Blockly.Blocks['marshalling_group_range_fn'] = {
   /**
@@ -123,44 +188,11 @@ Blockly.Blocks['marshalling_group_range_fn'] = {
           ]
         },
         {
-          "type": "input_value",
-          "name": "GROUP",
-          "check": "String"
+          "type": "field_vertical_separator"
         },
         {
           "type": "input_value",
-          "name": "DEVICE",
-          "check": "String"
-        },
-        {
-          "type": "input_value",
-          "name": "DEVICE1",
-          "check": "String"
-        },
-        {
-          "type": "input_value",
-          "name": "DEVICE2",
-          "check": "String"
-        },
-        {
-          "type": "input_value",
-          "name": "DEVICE3",
-          "check": "String"
-        },
-        {
-          "type": "input_value",
-          "name": "DEVICE4",
-          "check": "String"
-        },
-        {
-          "type": "input_value",
-          "name": "DEVICE5",
-          "check": "String"
-        },
-        {
-          "type": "input_value",
-          "name": "DEVICE6",
-          "check": "String"
+          "name": "GROUP"
         }
       ],
       "category": Blockly.Categories.marshalling,

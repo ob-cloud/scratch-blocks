@@ -48,7 +48,7 @@ Blockly.Blocks['matrix'] = {
       ],
       "outputShape": Blockly.OUTPUT_SHAPE_ROUND,
       "output": "Number",
-      "extensions": ["colours_pen"]
+      "extensions": ["colours_sounds"]
     });
   }
 };
