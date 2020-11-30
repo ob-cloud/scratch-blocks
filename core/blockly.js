@@ -347,6 +347,10 @@ Blockly.hideChaffInternal_ = function(opt_allowToolbox) {
         workspace.toolbox_.flyout_.autoClose) {
       workspace.toolbox_.clearSelection();
     }
+    if (workspace.trashcan &&
+      workspace.trashcan.flyout) {
+      workspace.trashcan.closeFlyout();
+    }
   }
 };
 
