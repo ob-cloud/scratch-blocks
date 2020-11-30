@@ -89,6 +89,7 @@ Blockly.Toolbox = function(workspace) {
  * This is the sum of the width of the flyout (250) and the category menu (60).
  * @type {number}
  */
+// TODO 设为0 隐藏
 Blockly.Toolbox.prototype.width = 310;
 
 /**
@@ -124,8 +125,17 @@ Blockly.Toolbox.prototype.init = function() {
           // Close flyout.
           Blockly.hideChaff(false);
         } else {
+          // var itemId = srcElement.getAttribute('id');
+          // if (itemId) {
+          //   var item = this.getToolboxItemById(itemId);
+          //   if (item.isSelectable()) {
+          //     this.setSelectedItem(item);
+          //     item.onClick(e);
+          //   }
+          // }
           // Just close popups.
           Blockly.hideChaff(true);
+          // this.setSelectedItem(this.categoryMenu_.categories_[0], false);
         }
         Blockly.Touch.clearTouchIdentifier();  // Don't block future drags.
       }, /*opt_noCaptureIdentifier*/ false, /*opt_noPreventDefault*/ true);
@@ -185,6 +195,7 @@ Blockly.Toolbox.prototype.createFlyout_ = function() {
 Blockly.Toolbox.prototype.populate_ = function(newTree) {
   this.categoryMenu_.populate(newTree);
   this.showAll_();
+  // TODO 默认选中第一个分类
   this.setSelectedItem(this.categoryMenu_.categories_[0], false);
 };
 
@@ -210,6 +221,7 @@ Blockly.Toolbox.prototype.showAll_ = function() {
 
     allContents = allContents.concat(category.getContents());
   }
+  // TODO 这里默认展示所有菜单
   this.flyout_.show(allContents);
 };
 
@@ -257,6 +269,8 @@ Blockly.Toolbox.prototype.position = function() {
       treeDiv.style.left = '0';
     }
     treeDiv.style.height = '100%';
+    // TODO 这里自动计算宽度
+    this.width = treeDiv.offsetWidth;
   }
   this.flyout_.position();
 };
@@ -442,6 +456,7 @@ Blockly.Toolbox.prototype.setSelectedItem = function(item, opt_shouldScroll) {
   if (typeof opt_shouldScroll === 'undefined') {
     opt_shouldScroll = true;
   }
+  var oldItem = this.selectedItem_
   if (this.selectedItem_) {
     // They selected a different category but one was already open.  Close it.
     this.selectedItem_.setSelected(false);
@@ -455,8 +470,51 @@ Blockly.Toolbox.prototype.setSelectedItem = function(item, opt_shouldScroll) {
       this.scrollToCategoryById(categoryId);
     }
   }
-};
+  this.updateFlyout_(oldItem, item);
 
+  // if (typeof opt_shouldScroll === 'undefined') {
+  //   opt_shouldScroll = true;
+  // }
+  // var oldItem = this.selectedItem_
+  // if (this.selectedItem_) {
+  //   // They selected a different category but one was already open.  Close it.
+  //   this.selectedItem_.setSelected(false);
+  // }
+  // this.selectedItem_ = newItem;
+
+  // if (this.selectedItem_) {
+  //   this.selectedItem_.setSelected(true);
+  //   // Scroll flyout to the top of the selected category
+  //   var categoryId = newItem.id_;
+  //   if (opt_shouldScroll) {
+  //     this.scrollToCategoryById(categoryId);
+  //   }
+  // }
+  // this.updateFlyout_(oldItem, newItem);
+  // this.fireSelectEvent_(oldItem, newItem);
+};
+Blockly.Toolbox.prototype.updateFlyout_ = function(oldItem, newItem) {
+  if ((oldItem == newItem) || !newItem ||
+      !newItem.getContents().length) {
+    this.flyout_.hide();
+  } else {
+    // this.flyout_.show(newItem.getContents());
+    // this.flyout_.scrollToStart();
+  }
+};
+Blockly.Toolbox.prototype.fireSelectEvent_ = function(oldItem, newItem) {
+  var oldElement = oldItem && oldItem.name;
+  var newElement = newItem && newItem.name;
+  // In this case the toolbox closes, so the newElement should be null.
+  if (oldItem == newItem) {
+    newElement = null;
+  }
+  // TODO (#4187): Update Toolbox Events.
+  var event = new Blockly.Events.Ui(null, 'category',
+      oldElement, newElement);
+  event.workspaceId = this.workspace_.id;
+  Blockly.Events.fire(event);
+};
 /**
  * Select and scroll to a category by name.
  * @param {string} name The name of the category to select and scroll to.
