@@ -56,7 +56,15 @@ Blockly.Options = function(options) {
         languageTree.getElementsByTagName('category').length);
     var hasTrashcan = options['trashcan'];
     if (hasTrashcan === undefined) {
-      hasTrashcan = false;
+      hasTrashcan = hasCategories;
+    }
+    var maxTrashcanContents = options['maxTrashcanContents'];
+    if (hasTrashcan) {
+      if (maxTrashcanContents === undefined) {
+        maxTrashcanContents = 32;
+      }
+    } else {
+      maxTrashcanContents = 0;
     }
     var hasCollapse = options['collapse'];
     if (hasCollapse === undefined) {
