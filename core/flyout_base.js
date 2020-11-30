@@ -152,7 +152,7 @@ Blockly.Flyout = function(workspaceOptions) {
  * Does the flyout automatically close when a block is created?
  * @type {boolean}
  */
-Blockly.Flyout.prototype.autoClose = false;
+Blockly.Flyout.prototype.autoClose = true;
 
 /**
  * Whether the flyout is visible.
@@ -312,6 +312,7 @@ Blockly.Flyout.prototype.init = function(targetWorkspace) {
       this.horizontalLayout_, false, 'blocklyFlyoutScrollbar');
 
   this.position();
+  // TODO this.hide();
 
   Array.prototype.push.apply(this.eventWrappers_,
       Blockly.bindEventWithChecks_(this.svgGroup_, 'wheel', this, this.wheel_));
@@ -439,7 +440,38 @@ Blockly.Flyout.prototype.updateDisplay_ = function() {
   // flyout's visibility.
   this.scrollbar_.setContainerVisible(show);
 };
+/**
+ * Update the view based on coordinates calculated in position().
+ * @param {number} width The computed width of the flyout's SVG group
+ * @param {number} height The computed height of the flyout's SVG group.
+ * @param {number} x The computed x origin of the flyout's SVG group.
+ * @param {number} y The computed y origin of the flyout's SVG group.
+ * @protected
+ */
+Blockly.Flyout.prototype.positionAt_ = function(width, height, x, y) {
+  this.svgGroup_.setAttribute("width", width);
+  this.svgGroup_.setAttribute("height", height);
+  if (this.svgGroup_.tagName == 'svg') {
+    var transform = 'translate(' + x + 'px,' + y + 'px)';
+    Blockly.utils.setCssTransform(this.svgGroup_, transform);
+  } else {
+    // IE and Edge don't support CSS transforms on SVG elements so
+    // it's important to set the transform on the SVG element itself
+    var transform = 'translate(' + x + ',' + y + ')';
+    this.svgGroup_.setAttribute("transform", transform);
+  }
 
+  // Update the scrollbar (if one exists).
+  if (this.scrollbar_) {
+    // Set the scrollbars origin to be the top left of the flyout.
+    this.scrollbar_.setOrigin(x, y);
+    this.scrollbar_.resize();
+    // Set the position again so that if the metrics were the same (and the
+    // resize failed) our position is still updated.
+    this.scrollbar_.setPosition_(
+      this.scrollbar_.position_.x, this.scrollbar_.position_.y);
+  }
+};
 /**
  * Hide and empty the flyout.
  */
@@ -476,6 +508,7 @@ Blockly.Flyout.prototype.show = function(xmlList) {
   var contents = [];
   var gaps = [];
   this.permanentlyDisabled_.length = 0;
+  if (typeof xmlList === 'string') xmlList = [xmlList]
   for (var i = 0, xml; xml = xmlList[i]; i++) {
     // Handle dynamic categories, represented by a name instead of a list of XML.
     // Look up the correct category generation function and call that to get a
@@ -827,6 +860,29 @@ Blockly.Flyout.prototype.createBlock = function(originalBlock) {
   return newBlock;
 };
 
+Blockly.Flyout.prototype.initFlyoutButton_ = function(button, x, y) {
+  var buttonSvg = button.createDom();
+  button.moveTo(x, y);
+  button.show();
+  // Clicking on a flyout button or label is a lot like clicking on the
+  // flyout background.
+  this.listeners_.push(
+      Blockly.bindEventWithChecks_(
+          buttonSvg, 'mousedown', this, this.onMouseDown_));
+
+  this.buttons_.push(button);
+};
+
+Blockly.Flyout.prototype.moveRectToBlock_ = function(rect, block) {
+  var blockHW = block.getHeightWidth();
+  rect.setAttribute('width', blockHW.width);
+  rect.setAttribute('height', blockHW.height);
+
+  var blockXY = block.getRelativeToSurfaceXY();
+  rect.setAttribute('y', blockXY.y);
+  rect.setAttribute('x', this.RTL ? blockXY.x - blockHW.width : blockXY.x);
+};
+
 /**
  * Reflow blocks and their buttons.
  */
@@ -834,8 +890,8 @@ Blockly.Flyout.prototype.reflow = function() {
   if (this.reflowWrapper_) {
     this.workspace_.removeChangeListener(this.reflowWrapper_);
   }
-  var blocks = this.workspace_.getTopBlocks(false);
-  this.reflowInternal_(blocks);
+  // var blocks = this.workspace_.getTopBlocks(false);
+  this.reflowInternal_();
   if (this.reflowWrapper_) {
     this.workspace_.addChangeListener(this.reflowWrapper_);
   }
@@ -921,3 +977,4 @@ Blockly.Flyout.prototype.recycleBlock_ = function(block) {
   block.moveBy(-xy.x, -xy.y);
   this.recycleBlocks_.push(block);
 };
+Blockly.Flyout.prototype.layout_;
