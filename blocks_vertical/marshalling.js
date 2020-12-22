@@ -192,7 +192,12 @@ Blockly.Blocks['marshalling_group_range_fn'] = {
         },
         {
           "type": "input_value",
-          "name": "GROUP"
+          "name": "GROUP",
+          "check": "String"
+        },
+        {
+          "type": "input_value",
+          "name": "DEVICE"
         }
       ],
       "category": Blockly.Categories.marshalling,
